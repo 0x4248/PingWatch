@@ -23,11 +23,13 @@ public class PingLog {
         logToConsole = Objects.equals(_logToConsole, "true");
         if (logToFile) {
             try {
-                String logPath = ConfigHelper.fetchConfig("PingLogPath");
-                FileWriter fileWriter = new FileWriter(logPath, true);
-                PrintWriter printWriter = new PrintWriter(fileWriter);
-                printWriter.println(message);
-                printWriter.close();
+                if (logToFile != false) {
+                    String logPath = ConfigHelper.fetchConfig("PingLogPath");
+                    FileWriter fileWriter = new FileWriter(logPath, true);
+                    PrintWriter printWriter = new PrintWriter(fileWriter);
+                    printWriter.println(message);
+                    printWriter.close();
+                }
             } catch (IOException e) {
                 e.printStackTrace();
             }
