@@ -27,7 +27,9 @@ public class Log {
         if (level < logLevel) {
             return;
         }
-
+        String _logToFile = ConfigHelper.fetchConfig("SaveLogs");
+        logToFile = Objects.equals(_logToFile, "true");
+        System.out.println("LogToFile: " + logToFile);
         if (logToFile) {
             try {
                 FileWriter fileWriter = new FileWriter(logPath, true);
