@@ -1,3 +1,3 @@
 Manifest-Version: 1.0
-Main-Class: com.github.0x4248.Main
+Main-Class: com.github._0x4248.Main
 

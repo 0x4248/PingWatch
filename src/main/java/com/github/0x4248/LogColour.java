@@ -5,7 +5,7 @@
  * By: 0x4248
  */
 
-package com.github.0x4248;
+package com.github._0x4248;
 
 public class LogColour {
     public static final String RESET = "\u001B[0m";
