@@ -1,10 +1,10 @@
 /** Ping watch
  * A java tool to monitor ping time with coloured terminal output.
- * GitHub: https://www.github.com/lewisevans2007/PingWatch
- * By: Lewis Evans
+ * GitHub: https://www.github.com/0x4248/PingWatch
+ * By: 0x4248
 */
 
-package com.github.lewisevans2007;
+package com.github.0x4248;
 
 public class Main {
     public static void clearScreen() {
