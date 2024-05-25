@@ -32,6 +32,6 @@ SavePingLogs: true
 PingLogPath: pings.txt
 ```
 
-## License
+## Licence
 
 This project is licenced under the GNU General Public License v3.0. For more information, see the [LICENSE](LICENSE) file.
